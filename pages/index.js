@@ -40,12 +40,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Prisma example with Vercel</title>
+        <title>Prisma example with Kinsta</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Prisma Vercel Deployment Example</h1>
+        <h1 className={styles.title}>Prisma Kinsta Deployment Example</h1>
 
         <div className={styles.grid}>
           <button onClick={onGetStatus} className={styles.apiButton}>
@@ -73,12 +73,6 @@ export default function Home() {
         </pre>
       </main>
 
-      <footer className={styles.footer}>
-        Powered by{' '}
-        <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        &
-        <img src="/prisma.svg" alt="Prisma Logo" className={styles.logo} />
-      </footer>
     </div>
   )
 }

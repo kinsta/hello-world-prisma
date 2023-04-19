@@ -1,5 +1,5 @@
 {
-  "name": "deployment-example-prisma-vercel",
+  "name": "deployment-example-kinsta",
   "dependencies": {
     "@prisma/client": "4.13.0",
     "next": "13.3.0",
@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build",
+    "prisma:migrate": "prisma generate && prisma migrate deploy && next build",
     "prisma:generate": "prisma generate"
   },
   "devDependencies": {
