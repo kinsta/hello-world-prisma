@@ -1,9 +1,6 @@
 .now
 node_modules/
 
-.vercel
-package-lock.json
-
 # next.js
 /.next/
 /out/
