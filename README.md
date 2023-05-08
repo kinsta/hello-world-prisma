@@ -1,5 +1,40 @@
-# Vercel deployment example
+![Eleventy](https://user-images.githubusercontent.com/2342458/230336594-86e2311a-3080-4d1c-9a01-03999a12136b.png)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fprisma%2Fdeployment-example-vercel&env=DATABASE_URL&envDescription=PostgreSQL%20connection%20string&envLink=https%3A%2F%2Fwww.prisma.io%2Fdocs%2Fconcepts%2Fdatabase-connectors%2Fpostgresql%23connection-url&project-name=prisma-vercel-deployment-example&repo-name=prisma-vercel-deployment-example)
+# Kinsta - Hello World - Prisma
 
-[Deployment guide](https://www.prisma.io/docs/guides/deployment/deploying-to-vercel)
+An example of how to deploy a **Prisma + Next.JS** application on Kinsta.
+
+---
+Kinsta is a developer-centric cloud host / PaaS. We’re striving to make it easier for you to share your web projects with your users. Focus on coding and building, and we’ll take care of deployment and provide fast, scalable hosting. + 24/7 expert-only support.
+
+- [Start your free trial](https://kinsta.com/signup/?product_type=app-db)
+- [Application Hosting](https://kinsta.com/application-hosting)
+- [Database Hosting](https://kinsta.com/database-hosting)
+
+## Installation
+This application requires a Database to work. So before you'll start you have to set up a **PostgresSQL** database. We recommend using [Kinsta Database Hosting](https://kinsta.com/database-hosting) for this task. Before continuing make sure you have the connection string - it should look like this `postgresql://username:password@your_postgres_db.cloud/db_identifier`.
+
+If you are using **Kinsta Database Hosting** make sure you set up the internal connection by following [this guide](https://kinsta.com/docs/adding-internal-connections/).
+
+### Environment Variables
+```DB_CONNECTION_URL``` - paste the database connection string here.
+
+## Dependency Management
+Kinsta automatically installs dependencies defined in your `package.json` file during the deployment process.
+
+## Web Server Setup
+
+### Port
+
+Kinsta automatically sets the `PORT` environment variable. You should **not** define it yourself and you should **not** hard-code it into the application.
+
+### Start Command
+
+When deploying an application, Kinsta automatically creates a web process with `npm start` as the entry point. Make sure to use this command to run your server.
+
+## Deployment Lifecycle
+
+Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit) the `npm build` command is run, followed by the `npm start` command.
+
+## What is Prisma
+Prisma is an open-source database toolkit that simplifies database access for developers by providing a type-safe and intuitive API. It supports multiple databases and generates efficient, optimized SQL queries for faster performance. More information is available on the [11ty.dev](https://www.prisma.io/) website.
