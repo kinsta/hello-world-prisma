@@ -1,4 +1,4 @@
-![Eleventy](https://user-images.githubusercontent.com/2342458/230336594-86e2311a-3080-4d1c-9a01-03999a12136b.png)
+![Prisma](https://user-images.githubusercontent.com/2342458/236766510-6bdddf7d-a726-4a73-8fcd-51bfc84de452.png)
 
 # Kinsta - Hello World - Prisma
 
@@ -37,4 +37,4 @@ When deploying an application, Kinsta automatically creates a web process with `
 Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit) the `npm build` command is run, followed by the `npm start` command.
 
 ## What is Prisma
-Prisma is an open-source database toolkit that simplifies database access for developers by providing a type-safe and intuitive API. It supports multiple databases and generates efficient, optimized SQL queries for faster performance. More information is available on the [11ty.dev](https://www.prisma.io/) website.
+Prisma is an open-source database toolkit that simplifies database access for developers by providing a type-safe and intuitive API. It supports multiple databases and generates efficient, optimized SQL queries for faster performance. More information is available on the [prisma.io](https://www.prisma.io/) website.
